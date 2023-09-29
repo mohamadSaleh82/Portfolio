@@ -1325,7 +1325,6 @@ function getUserIP() {
       $ipaddress = 'UNKNOWN';
   return $ipaddress;
 }
-
 // Get the user's IP address
 $ip = getUserIP();
 
