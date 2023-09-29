@@ -1,0 +1,298 @@
+:root {
+    --color: var(--blue);
+    --red: #E02217;
+    --cyan: #00BCD4;
+    --orange: #FF5722;
+    --light-blue: #03A9F4;
+    --light-green: #8BC34A;
+    --deep-purple: #673AB7;
+    --turquoise: #1abc9c;
+    --brown: #795548;
+    --blue: #0487cc;
+    --crimson: crimson;
+    --yellow: #ffc815;
+    --dark: #292929;
+    --light: #fff;
+    --text-light: #fff;
+    --text-dark: #333;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* color control */
+
+.color-ctrl {
+    position: fixed;
+    width: 230px;
+    left: -235px;
+    transition: all .3s ease-in-out;
+    height: auto;
+    top: 100px;
+    background-color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom: 5px solid var(--color);
+    box-shadow: 0 0 10px #DDD;
+    z-index: 10000;
+    padding: 12px;
+}
+
+.color-ctrl h6 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.color-ctrl hr {
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.color-ctrl .color-box,
+.color-ctrl .theme-box {
+    cursor: pointer;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    display: inline-block;
+    box-shadow: 4px 3px 5px #ddd;
+    background-color: #111;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.color-box.selected:after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "fontawesome";
+    color: #fff;
+    font-size: 13px;
+    top: 2px;
+    left: 6px;
+}
+
+.theme-box.selected:after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "fontawesome";
+    color: #fff;
+    font-size: 13px;
+    top: 2px;
+    left: -1px;
+}
+
+.checkbox-box.selected:after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "fontawesome";
+    color: #333;
+    font-size: 13px;
+    top: 0px;
+    left: 2px;
+}
+
+.theme-box.selected.light:after {
+    color: #333;
+}
+
+.color-ctrl .color-box:hover,
+.color-ctrl .theme-box:hover {
+    box-shadow: 0 0 10px #ddd;
+}
+
+.color-ctrl .brown {
+    background-color: var(--brown);
+}
+
+.color-ctrl .cyan {
+    background-color: var(--cyan);
+}
+
+.color-ctrl .deep-orange {
+    background-color: var(--orange);
+}
+
+.color-ctrl .deep-purple {
+    background-color: var(--deep-purple);
+}
+
+.color-ctrl .light-blue {
+    background-color: var(--light-blue);
+}
+
+.color-ctrl .light-green {
+    background-color: var(--light-green);
+}
+
+.color-ctrl .turquoise {
+    background-color: var(--turquoise);
+}
+
+.color-ctrl .original-red {
+    background-color: var(--red);
+}
+
+.color-ctrl .crimson {
+    background-color: var(--crimson);
+}
+
+.color-ctrl .blue {
+    background-color: var(--blue);
+}
+
+.color-ctrl .yellow {
+    background-color: var(--yellow);
+}
+
+.color-ctrl .dark {
+    background-color: var(--dark);
+}
+
+.color-ctrl .light {
+    background-color: var(--light);
+}
+
+.dark-theme-selector,
+.light-theme-selector {
+    border: 1px solid var(--dark);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 10px 0 0;
+    text-indent: 8px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 9px #ddd;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.color-ctrl.open {
+    left: 0;
+}
+
+.color-ctrl .toggler {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    right: -40px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    line-height: 2.1;
+    color: #fff;
+    top: 0;
+    background-color: var(--color);
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggler i.fa.fa-cog {
+    font-size: 18px;
+    /* animation: rotating 1s  infinite; */
+}
+
+.buy-now-btn-wrapper {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.envato-buy-now {
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #82b440;
+    -webkit-box-shadow: 0 2px 0 #6f9a37;
+    box-shadow: 0 2px 0 #6f9a37;
+    outline: none;
+    border-radius: 8px;
+}
+
+.envato-buy-now:hover {
+    text-decoration: none;
+    background-color: #7aa93c;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+
+body.dark {
+    background-color: var(--dark);
+}
+
+body.dark section,
+body.dark .progress-bar .label {
+    background-color: var(--dark) !important;
+}
+
+body.dark #about .profile-img:after {
+    border: 10px solid var(--light);
+}
+
+body.dark #about h2 span,
+body.dark #about p,
+body.dark .section-title,
+body.dark #services .sub-title,
+body.dark .progress-bar .label,
+body.dark .progress-percent,
+body.dark .client_name,
+body.dark .feature,
+body.dark .sub-title,
+body.dark .feature h3,
+body.dark .feature p {
+    color: var(--text-light) !important;
+}
+
+body.dark .text-muted {
+    color: #ddd !important;
+}
+
+body.dark #services,
+body.dark #testimonials {
+    background-color: #202020 !important;
+}
+
+body.dark .feature {
+    background-color: #333;
+}
+
+body.dark .feature:hover {
+    background-color: var(--color);
+}
+
+/* checkboxs */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.checkbox-box {
+    display: inline-block;
+    border: 1px solid #ddd;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.checkbox-link,
+.checkbox-link:hover {
+    color: currentColor;
+}

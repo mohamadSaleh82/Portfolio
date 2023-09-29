@@ -1,0 +1,48 @@
+.custom-navbar a.nav-link:hover,
+.custom-navbar a.nav-link:focus,
+.custom-navbar a.nav-link.active,
+.custom-navbar li.active>a.nav-link,
+.special,
+#home h1 span,
+#about h2,
+.btn-about:hover,
+#hire-me a:hover,
+#contact input[type=submit]:hover,
+.name,
+#footer .social-media a:hover {
+    color: var(--color);
+}
+
+#home a,
+.btn-about,
+.section-title:after,
+.persone_totop,
+.progress-percentage,
+.position,
+.feature:hover,
+#hire-me a,
+#contact input[type=submit],
+#contact .info:hover,
+#footer .social-media a:hover,
+.owl-theme .owl-controls .owl-page span,
+.color-ctrl .toggler {
+    background-color: var(--color);
+}
+
+figure.effect {
+    background: var(--color);
+}
+
+#contact input:focus,
+#contact textarea:focus,
+.form_info {
+    border-bottom: 2px solid var(--color);
+}
+
+.form_success {
+    border: 2px solid var(--color);
+}
+
+svg.btnToggle path {
+    fill: var(--color);
+}
