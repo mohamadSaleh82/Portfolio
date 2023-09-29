@@ -1,8 +1,12 @@
 ## Customizable Portfolio Template
 Welcome to the Customizable Portfolio Template! This web development project is designed to provide a clean, responsive, and easily customizable portfolio website. It's built using HTML, CSS, and JavaScript, making it accessible for both beginners and experienced developers.
-![Portfolio](https://raw.githubusercontent.com/mohamadsaleh82/Portfolio/master/Demo/opan.png)
 
-📁 **Project Description**:
+**Here some examples:**
+
+![Portfolio](https://raw.githubusercontent.com/mohamadsaleh82/Portfolio/master/DEMO/opan.png)
+
+
+## 📁 Project Description:
 
 The Customizable Portfolio Template is a web development project designed to provide a clean, responsive, and easily customizable portfolio website. This template is built using HTML, CSS, and JavaScript, making it accessible for both beginners and experienced developers. It offers a user-friendly structure, allowing individuals to showcase their skills, projects, and experiences in a professional manner.
 
